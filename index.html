@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <header>
+            <h1> Sistem Informasi Data Mahasiswa - Praktikum 1 - Kelas A</h1>
+            <P> Sistem ini berisi data mahasiswa teknik informatika yang terdaftar di praktikum 1 Pemrograman Web</P>
+            <img src="logo (2).jpg" alt="Logo Unila" width="120" height="120">
+            <hr>
+            <nav>
+                <ul>
+                    <li><a href="#Informasi">Informasi</a></li>
+                    <li><a href="#Data Mahasiswa">Data Mahasiswa</a></li>
+                    <li><a href="#Tambah Data Mahasiswa">Tambah Data Mahasiswa</a></li>
+                </ul>
+            </nav>
+            <hr>
+            <main>
+                <section id="Informasi">
+                    <h2>Informasi</h2>
+                    <p>Ini adalah informasi tentang sistem informasi data mahasiswa.</p>
+                    <article>
+                        <p> Sistem Informasi Data Mahasiswa </p>
+                    </article>
+                </section>
+                <hr>
+                <section id="Daftar Mahasiswa">
+                    <h2>Daftar Mahasiswa Aktif</h2>
+                    <p>Berikut adalah data mahasiswa terdaftar:</p>
+                    <table border="1" cellpadding="8" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>Foto</th>
+                                <th>NPM</th>
+                                <th>Nama Lengkap</th>
+                                <th>Program Studi</th>
+                                <th>Angkatan</th>
+                                <th>Email</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td><img src="foto1.jpg" alt="Foto Dendi Denata" width="100" height="100"></td>
+                                <td>2415061087</td>
+                                <td>Dendi Denata</td>
+                                <td>Teknik Informatika</td>
+                                <td>2024</td>
+                                <td>dendi.denata@example.com</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td><img src="foto2.jpg" alt="Foto Rahman Hidayat" width="100" height="100"></td>
+                                <td>2415061073</td>
+                                <td>Rahman Hidayat</td>
+                                <td>Teknik Informatika</td>
+                                <td>2024</td>
+                                <td>rahman.hidayat@example.com</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td><img src="foto3.jpeg" alt="Foto Zinedine Zidane" width="100" height="100"></td>
+                                <td>2415061083</td>
+                                <td>Zinedine Zidane</td>
+                                <td>Teknik Informatika</td>
+                                <td>2024</td>
+                                <td>zinedine.zidane@example.com</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <hr>
+                <section id="Tambah Data Mahasiswa">
+                    <h2>Tambah Data Mahasiswa</h2>
+                    <form action="proses_tambah.php" method="POST" enctype="multipart/form-data">
+                        <label for="foto">Foto:</label>
+                        <input type="file" name="foto" id="foto" required><br><br>
+
+                        <label for="npm">NPM:</label>
+                        <input type="text" name="npm" id="npm" required><br><br>
+
+                        <label for="nama">Nama Lengkap:</label>
+                        <input type="text" name="nama" id="nama" required><br><br>
+
+                        <label for="prodi">Program Studi:</label>
+                        <input type="text" name="prodi" id="prodi" required><br><br>
+
+                        <label for="angkatan">Angkatan:</label>
+                        <input type="text" name="angkatan" id="angkatan" required><br><br>
+
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" required><br><br>
+
+                        <input type="submit" value="Tambah Data">
+                    </form>
+            </main>
+        </header>
+    </body>
+</html>
